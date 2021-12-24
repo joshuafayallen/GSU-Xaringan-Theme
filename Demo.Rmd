@@ -1,0 +1,183 @@
+---
+title: "Xaringan presentation"
+subtitle: "With a GSU Flavor"
+author: "Josh Allen"
+institute: 
+ - "Deparment of Political Science"
+ -  "Georgia State University"
+date: "2016/12/12 (updated: `r Sys.Date()`)"
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    css: ["gsu-css/gsu.css", "gsu-css/gsu-fonts.css"]
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE, htmltools.preserve.raw = FALSE)
+```
+
+# Xaringan presentation
+
+## What is Xaringan?
+
+- [`Xaringan`](https://github.com/yihui/xaringan) is an R package that can be used to create slides
+
+- The name comes from Sharingan from the anime Naruto! `r emo::ji("laugh")`
+
+- How to install:
+
+```{r eval=FALSE, include=TRUE}
+devtools::install_github('yihui/xaringan')
+```
+
+- How to get started:
+
+    - [Xaringan github](https://github.com/yihui/xaringan)
+
+---
+# Xaringan presentation
+
+- Here are some great tutorials:
+
+  - [Xaringan github](https://github.com/yihui/xaringan)
+
+  - [Yihui's tutorial](https://slides.yihui.org/xaringan/#1)
+  
+  - [Making Slides in the Tada!-verse](https://apreshill.github.io/data-vis-labs-2018/slides/06-slides_xaringan.html#1)
+  
+  - [Making slides in R Markdown](http://arm.rbind.io/slides/xaringan.html#1)
+
+- Some useful extensions for `Xaringan`
+
+  - [`xaringanExtra` R package](https://github.com/gadenbuie/xaringanExtra)
+  
+  - [`xaringanthemer` R packge](https://pkg.garrickadenbuie.com/xaringanthemer/index.html)
+  
+  - [Xaringan Gallery](https://xaringan.gallery/)
+  
+  - [`DT` R package for interactive tables](https://rstudio.github.io/DT/)
+
+
+---
+# GSU theme
+
+- How to enable the gsu theme:
+
+```md
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    css: ["gsu", "gsu-fonts"]
+```
+
+- The GSU theme for `Xaringan` presentation is suitable to work with a 16:9 aspect ratio
+
+```md
+nature:
+  highlightStyle: github
+  highlightLines: true
+  countIncrementalSlides: false
+  ratio: "16:9"
+```
+
+---
+# gsu-Madison theme
+
+- We can make `blockquotes` by calling `<gsu-blockquote>some texts</gsu-blockquote>`
+
+<gsu-blockquote>This is a blocked quote</gsu-blockquote> 
+
+- Highlight text using `**text**` like **this**
+
+- Italic text using `*text*` like *this*
+
+- Bold text using `.bold[text]` like .bold[text]
+
+---
+# GSU theme
+
+- We can change the color of any text by using `.color[text]`. I prepared three color palettes for the users. 
+
+  - [GSU palette](https://brand.wisc.edu/web/colors/): `.gsu-blue[text]`,`.gsu-dark[text]`,`.gsu-gray-blue[text]`,`.gsu-gray-darker[text]`, `.gsu-gray-darkest[text]`, `.gsu-anchor-color[text]`
+  - .gsu-blue[gsu blue], .gsu-dark[gsu dark], .gsu-gray-blue[gsu gray blue], .gsu-gray-darker[gsu gray darker], .gsu-gray-darkest[gsu gray darkest], .gsu-anchor-color[gsu anchor]
+
+  - Palette 1: `.p1-yellow[text]`, `.p1-orange[text]`, `.p1-darkred[text]`, `.p1-purple[text]`
+  - .p1-yellow[text], .p1-orange[text], .p1-darkred[text], .p1-purple[text]
+  
+  - Palette 2: `.p2-green[text]`, `.p2-blue[text]`, `.p2-yellow[text]`, `.p2-red[text]`
+  - .p2-green[text], .p2-blue[text], .p2-yellow[text], .p2-red[text]
+
+
+---
+class: bold-last-item
+
+# GSU theme
+
+- add `class: bold-last-item` at the beginning of each slide to switch on the **Bold-Last-Item**
+
+```css
+---
+class: bold-last-item
+```
+--
+- For example
+--
+- Bullet list 1
+--
+- Bullet list 2
+--
+- Bullet list 3
+---
+class: highlight-last-item
+# GSU theme
+- add `class: highlight-last-item` at the beginning of each slide to switch on the **Highlight-Last-Item**
+--
+- For example
+--
+- Bullet list 1
+--
+- Bullet list 2
+--
+- Bullet list 3
+---
+```{r xaringan-extra-styles, echo=FALSE}
+xaringanExtra::use_extra_styles(
+  hover_code_line = TRUE,         #<<
+  mute_unhighlighted_code = TRUE  #<<
+)
+```
+# R code and plot output
+
+```{r, fig.height=4.5, fig.width=9, fig.retina=2, fig.align='center', message=FALSE, warning=FALSE}
+library("tidyverse")
+cars %>% 
+  ggplot(aes(x = dist, y = speed)) + 
+  geom_point() + 
+  geom_smooth(method = 'lm', formula = y ~ poly(x, 2)) + 
+  theme_bw(base_size = 24) 
+```
+
+---
+# Some Tips
+
+- Do not forget to try the option **`yolo: true`** under **`xaringan::moon_reader`** in the YAML metadata of your R Markdown document. A picture of smiling Karl will be randomly insert in the slides.
+
+- Use [`DT`](https://rstudio.github.io/DT/) for interactive tables.
+
+- [`xaringanExtra` R package](https://github.com/gadenbuie/xaringanExtra) has many other additional and powerful features.
+
+- Insert emoji by using [`emo`](https://github.com/hadley/emo) R package `r emo::ji("thinking")` `r emo::ji("laugh")` `r emo::ji("+1")`
+
+
+
+- If you don't like the default font size and color, you can change them by using html syntax `<span style='font-size:55pt; color:#cc0033'> some text! </span>`
+
+- If you want to change any elements of this theme, feel free to edit the source file as you like.
+
+- The best way to learn about `Xaringan` is reading other people's source codes.
+
+---
