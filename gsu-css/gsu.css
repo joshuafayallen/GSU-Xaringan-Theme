@@ -42,42 +42,62 @@ a, a > code {
 
 /* Two-column layout */
 .left-column {
-  color: #282728	;
-  width: 25%;
+  color: #777;
+    width: 30%;
   height: 92%;
   float: left;
+  font-size: 18px;
 }
+
 .left-column h2:last-of-type, .left-column h3:last-child {
   color: #000;
 }
+
+.left-column1 {
+  color: #777;
+    width: 34%;
+  height: 92%;
+  float: left;
+  font-size: 18px;
+}
+
 .right-column {
-  width: 70%;
+  width: 67%;
+  float: right;
+  padding-top: 0em;
+}
+
+.right-column1 {
+  width: 63%;
   float: right;
   padding-top: 0em;
 }
 
 .pull-left {
   float: left;
-  width: 45%;
+  width: 47%;
 }
-
 .pull-right {
   float: right;
-  width: 45%;
+  width: 47%;
 }
-
-.pull-right + * {
+.pull-right ~ * {
   clear: both;
 }
 
 img, video, iframe {
   max-width: 100%;
 }
-
-blockquote {
-  border-left: solid 5px lightgray;
-  padding-left: 1em;
+table {
+  margin: auto;
+  border-top: 1px solid #666;
+  border-bottom: 1px solid #666;
 }
+table thead th { border-bottom: 1px solid #ddd; }
+th, td { padding: 5px; }
+thead, tfoot, tr:nth-child(even) { background: #eee }
+
+@page { margin: 0; }
 
 /* adjust table horizontal spacing */
 th, td {
@@ -114,7 +134,7 @@ th, td { padding: 5px; }
 /* Add image and change bg color */
 .title-slide {
   background-image: url(https://commkit.gsu.edu/files/2019/06/PrimaryLogo3color.jpg);
-  background-position: 8% 12%;
+  background-position: 100% 0%;
   background-size: 300px;
   background-color: #fff;
   padding-left: 100px;  /* delete this for 4:3 aspect ratio */
@@ -126,17 +146,19 @@ th, td { padding: 5px; }
   padding-top: 100px;
   font-weight: normal;
   font-size: 60px;
-  text-align: center;
+  text-align: left;
   text-shadow: none;
   padding-bottom: 10px;
   margin-bottom: 10px;
 }
 
+
+
 /* H2 fonts */
 .title-slide h2 {
   color: #CC0000;
   font-size: 34px;
-  text-align: center;
+  text-align: left;
   text-shadow: none;
   padding-bottom: 20px;
   margin-top: 0px;
@@ -147,7 +169,7 @@ th, td { padding: 5px; }
   font-size: 28px;
   font-weight: normal;
   color: #666666;
-  text-align: center;
+  text-align: left;
   text-shadow: none;
   padding-bottom: 15px;
   margin: 0px;
@@ -252,20 +274,71 @@ h3 {
   font-size: 1.5em;
 }
 
-/* gsu-madison blockquote */
-gsu-blockquote {
+
+
+
+
+/* gsu blockquote */
+gsu-blockquote-red {
   display: block;
   margin-top: 1em;
   margin-bottom: 1em;
   margin-left: 40px;
   margin-right: 40px;
   border-left: solid 20px #c5050c;
+  border-right: solid 20px #c5050c;
   background-color: #dadfe1	;
   padding: 1em;
   color: #000000;
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
 }
+
+
+gsu-blockquote-blue {
+  display: block;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 40px;
+  margin-right: 40px;
+  border-left: solid 20px #0039A6;
+  border-right: solid 20px #0039A6;
+  background-color: #dadfe1	;
+  padding: 1em;
+  color: #000000;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+
+gsu-blockquote-alt {
+  display: block;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 40px;
+  margin-right: 40px;
+  border-left: solid 20px #776E64;
+  border-right: solid 20px #776E64;
+  background-color: #dadfe1	;
+  padding: 1em;
+  color: #000000;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+
+/*~~~~~~~~~~~~~~*/
+/* I like the frames*/
+/* and cols in Allison Hill's */
+/* https://alison.netlify.app/ares-kind-tools/*/
+/*~~~~~~~~~~~~~~*/
+
+.frame h1 {
+  color: #0039A6;
+  padding-bottom: 1.0em !important;
+  border-bottom: 3px solid var(#7899d4ff);
+}
+
+
+
 
 /*~~~~~~~~~~~~~~*/
 /* Highlight    */
