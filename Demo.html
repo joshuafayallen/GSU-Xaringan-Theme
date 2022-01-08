@@ -18,7 +18,7 @@ class: center, middle, inverse, title-slide
 ### Josh Allen
 ### Deparment of Political Science
 ### Georgia State University
-### 2016/12/12 (updated: 2021-12-24)
+### 2016/12/12 (updated: 2022-01-08)
 
 ---
 
@@ -31,7 +31,7 @@ class: center, middle, inverse, title-slide
 
 - [`Xaringan`](https://github.com/yihui/xaringan) is an R package that can be used to create slides
 
-- The name comes from Sharingan from the anime Naruto! 😄
+- The name comes from Sharingan from the anime Naruto! 😆
 
 - How to install:
 
@@ -69,7 +69,7 @@ devtools::install_github('yihui/xaringan')
 
 
 ---
-# gsu-Madison theme
+# GSU theme
 
 - How to enable the gsu theme:
 
@@ -91,11 +91,18 @@ nature:
 ```
 
 ---
-# gsu-Madison theme
+# GSU theme
 
-- We can make `blockquotes` by calling `&lt;gsu-blockquote&gt;some texts&lt;/gsu-blockquote&gt;`
+- We can make `blockquotes` by calling `&lt;gsu-blockquote-red&gt;some texts&lt;/gsu-blockquote-red&gt;`,
+`&lt;gsu-blockquote-blue&gt;some texts&lt;/gsu-blockquote-blue&gt;`, `&lt;gsu-blockquote-alt&gt;some texts&lt;/gsu-blockquote-alt&gt;`
 
-&lt;gsu-blockquote&gt;This is a blocked quote&lt;/gsu-blockquote&gt; 
+&lt;gsu-blockquote-red&gt;Lorem&lt;/gsu-blockquote&gt; 
+
+
+&lt;gsu-blockquote-blue&gt; Ipsum &lt;/gsu-blockquote-blue&gt; 
+
+&lt;gsu-blockquote-alt&gt; dolor &lt;/gsu-blockquote-alt&gt;
+
 
 - Highlight text using `**text**` like **this**
 
@@ -104,19 +111,16 @@ nature:
 - Bold text using `.bold[text]` like .bold[text]
 
 ---
-# gsu-Madison theme
+# GSU theme
 
-- We can change the color of any text by using `.color[text]`. I prepared three color palettes for the users. 
+- We can change the color of any text by using `.color[text]`. I prepared three color palettes for the users. Two of which using the `MetBrewer` packagke 
 
-  - [GSU palette](https://brand.wisc.edu/web/colors/): `.gsu-blue[text]`,`.gsu-dark[text]`,`.gsu-gray-blue[text]`,`.gsu-gray-darker[text]`, `.gsu-gray-darkest[text]`, `.gsu-anchor-color[text]`
+  - : `.gsu-blue[text]`,`.gsu-dark[text]`,`.gsu-gray-blue[text]`,`.gsu-gray-darker[text]`, `.gsu-gray-darkest[text]`, `.gsu-anchor-color[text]`
   - .gsu-blue[gsu blue], .gsu-dark[gsu dark], .gsu-gray-blue[gsu gray blue], .gsu-gray-darker[gsu gray darker], .gsu-gray-darkest[gsu gray darkest], .gsu-anchor-color[gsu anchor]
 
-  - Palette 1: `.p1-yellow[text]`, `.p1-orange[text]`, `.p1-darkred[text]`, `.p1-purple[text]`
-  - .p1-yellow[text], .p1-orange[text], .p1-darkred[text], .p1-purple[text]
-  
-  - Palette 2: `.p2-green[text]`, `.p2-blue[text]`, `.p2-yellow[text]`, `.p2-red[text]`
-  - .p2-green[text], .p2-blue[text], .p2-yellow[text], .p2-red[text]
+  - Hiroshige: .hiro-red[hiro red], .hiro-orange[hiro orange], .hiro-light-orange[Light Orange], .hiro-light-blue[light blue], .hiro-dark-blue[Dark Blue]
 
+- Veronese: .vero-red[Vero Red], .vero-brown[Vero Brown], .vero-yellow[Vero Yellow], .vero-teal[Vero Teal], .vero-blue[Vero Blue]
 
 ---
 class: bold-last-item
@@ -185,6 +189,40 @@ cars %&gt;%
 - The best way to learn about `Xaringan` is reading other people's source codes.
 
 ---
+
+
+
+---
+class: section, middle, center
+
+.frame[
+# In the beginning...
+
+]
+--
+
+# I made A column
+
+---
+
+
+
+---
+
+.pull-left[
+
+&gt; "In October, 1960, Dr. Goodall watched as a chimpanzee bent a twig, stripped off it leaves, and used it to “fish” termites from their nest. Up until her moment of discovery, the ability to make and use tools had been considered uniquely human."
+&gt; 
+&gt; [janegoodall.org](https://janegoodall.org/our-story/our-legacy-of-science/)
+
+]
+
+
+
+
+---
+
+
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>

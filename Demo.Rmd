@@ -63,7 +63,7 @@ devtools::install_github('yihui/xaringan')
 
 
 ---
-# gsu-Madison theme
+# GSU theme
 
 - How to enable the gsu theme:
 
@@ -85,11 +85,18 @@ nature:
 ```
 
 ---
-# gsu-Madison theme
+# GSU theme
 
-- We can make `blockquotes` by calling `<gsu-blockquote>some texts</gsu-blockquote>`
+- We can make `blockquotes` by calling `<gsu-blockquote-red>some texts</gsu-blockquote-red>`,
+`<gsu-blockquote-blue>some texts</gsu-blockquote-blue>`, `<gsu-blockquote-alt>some texts</gsu-blockquote-alt>`
 
-<gsu-blockquote>This is a blocked quote</gsu-blockquote> 
+<gsu-blockquote-red>Lorem</gsu-blockquote> 
+
+
+<gsu-blockquote-blue> Ipsum </gsu-blockquote-blue> 
+
+<gsu-blockquote-alt> dolor </gsu-blockquote-alt>
+
 
 - Highlight text using `**text**` like **this**
 
@@ -98,19 +105,16 @@ nature:
 - Bold text using `.bold[text]` like .bold[text]
 
 ---
-# gsu-Madison theme
+# GSU theme
 
-- We can change the color of any text by using `.color[text]`. I prepared three color palettes for the users. 
+- We can change the color of any text by using `.color[text]`. I prepared three color palettes for the users. Two of which using the `MetBrewer` packagke 
 
-  - [GSU palette](https://brand.wisc.edu/web/colors/): `.gsu-blue[text]`,`.gsu-dark[text]`,`.gsu-gray-blue[text]`,`.gsu-gray-darker[text]`, `.gsu-gray-darkest[text]`, `.gsu-anchor-color[text]`
+  - : `.gsu-blue[text]`,`.gsu-dark[text]`,`.gsu-gray-blue[text]`,`.gsu-gray-darker[text]`, `.gsu-gray-darkest[text]`, `.gsu-anchor-color[text]`
   - .gsu-blue[gsu blue], .gsu-dark[gsu dark], .gsu-gray-blue[gsu gray blue], .gsu-gray-darker[gsu gray darker], .gsu-gray-darkest[gsu gray darkest], .gsu-anchor-color[gsu anchor]
 
-  - Palette 1: `.p1-yellow[text]`, `.p1-orange[text]`, `.p1-darkred[text]`, `.p1-purple[text]`
-  - .p1-yellow[text], .p1-orange[text], .p1-darkred[text], .p1-purple[text]
-  
-  - Palette 2: `.p2-green[text]`, `.p2-blue[text]`, `.p2-yellow[text]`, `.p2-red[text]`
-  - .p2-green[text], .p2-blue[text], .p2-yellow[text], .p2-red[text]
+ - Hiroshige: .hiro-red[hiro red], .hiro-orange[hiro orange], .hiro-light-orange[Light Orange], .hiro-light-blue[light blue], .hiro-dark-blue[Dark Blue]
 
+ - Veronese: .vero-red[Vero Red], .vero-brown[Vero Brown], .vero-yellow[Vero Yellow], .vero-teal[Vero Teal], .vero-blue[Vero Blue]
 
 ---
 class: bold-last-item
@@ -181,3 +185,37 @@ cars %>%
 - The best way to learn about `Xaringan` is reading other people's source codes.
 
 ---
+
+
+
+---
+class: section, middle, center
+
+.frame[
+# In the beginning...
+
+]
+--
+
+# I made A column
+
+---
+
+
+
+---
+
+.pull-left[
+
+> "In October, 1960, Dr. Goodall watched as a chimpanzee bent a twig, stripped off it leaves, and used it to “fish” termites from their nest. Up until her moment of discovery, the ability to make and use tools had been considered uniquely human."
+> 
+> [janegoodall.org](https://janegoodall.org/our-story/our-legacy-of-science/)
+
+]
+
+
+
+
+---
+
+
