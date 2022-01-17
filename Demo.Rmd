@@ -188,34 +188,8 @@ cars %>%
 
 
 
----
-class: section, middle, center
-
-.frame[
-# In the beginning...
-
-]
---
-
-# I made A column
-
----
 
 
 
----
-
-.pull-left[
-
-> "In October, 1960, Dr. Goodall watched as a chimpanzee bent a twig, stripped off it leaves, and used it to “fish” termites from their nest. Up until her moment of discovery, the ability to make and use tools had been considered uniquely human."
-> 
-> [janegoodall.org](https://janegoodall.org/our-story/our-legacy-of-science/)
-
-]
-
-
-
-
----
 
 
