@@ -29,7 +29,7 @@ a, a > code {
 
 /* color tweak */
 .inverse {
-  background-color: #8f9186;
+  background-color: #0039A6;
   color: #FFFFFF;
   text-shadow: 0 0 20px #333;
 }
@@ -371,4 +371,9 @@ gsu-blockquote-alt {
 .bold-last-item > ul > li:last-of-type,
 .bold-last-item > ol > li:last-of-type {
   font-weight: bold;
+}
+
+
+.my-one-page-font {
+  font-size: 18px;
 }
